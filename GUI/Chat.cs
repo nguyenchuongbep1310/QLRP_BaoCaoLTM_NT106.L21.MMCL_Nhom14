@@ -69,7 +69,7 @@ namespace GUI
                 sWriter.WriteLine(this.textBox1.Text);
                 clientThread = new Thread(this.ClientRecv);
                 clientThread.Start();
-                MessageBox.Show("Connected");
+                MessageBox.Show("Kết nối");
             }
             catch (SocketException sockEx)
             {

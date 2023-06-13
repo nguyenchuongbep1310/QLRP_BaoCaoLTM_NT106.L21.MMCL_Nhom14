@@ -123,13 +123,13 @@ namespace GUI
                 stopChatServer = false;
                 listenThread = new Thread(this.Listen);
                 listenThread.Start();
-                MessageBox.Show(@"Start listening for incoming connections");
-                button1.Text = @"Stop";
+                MessageBox.Show(@"Bắt đầu trò chuyện");
+                button1.Text = @"Kết thúc";
             }
             else
             {
                 stopChatServer = true;
-                button1.Text = @"Start listening";
+                button1.Text = @"Bắt đầu trò chuyện";
                 tcpListener.Stop();
                 listenThread = null;
 
